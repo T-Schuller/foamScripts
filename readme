@@ -1,0 +1,5 @@
+ext_visc.py - Automates the plot generation of rheotestTool for extensional tests.
+
+shear_visc.py - Automates the plot generation of rheotestTool for shear tests.
+
+controlDict - Contains the recirculation size monitoring script.
