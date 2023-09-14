@@ -5,7 +5,7 @@ import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 
 #print(os.curdir)
 
-dir_path = "/home/schuller/Desktop/Sharepoint_Simulation/material_studies/PET-CF_study/Giesekus/"
+dir_path = YOUR_FILEDIRECTORY
 
 
 # # source of7
@@ -27,7 +27,7 @@ dir_path = "/home/schuller/Desktop/Sharepoint_Simulation/material_studies/PET-CF
 # print('Shear Finito!')
 
 
-report = pd.read_csv(dir_path + 'multimode_Giesekus_shear_PAA/Report', sep='\t', lineterminator='\n',skiprows=(1), index_col=False, on_bad_lines='skip')
+report = pd.read_csv(dir_path + YOUR_ECXEL_FILE, sep='\t', lineterminator='\n',skiprows=(1), index_col=False, on_bad_lines='skip')
 
 #print('report data', report.head)
 
@@ -36,7 +36,7 @@ rep_shear_XX=list(report.iloc[:, 2])
 
 shear_visc=[rep_shear_XX[x]/rep_time[x] for x in range(0,len(rep_shear_XX))]
 
-exp_report = pd.read_excel(dir_path + "mm_giesekuuus_report_new_petcf.ods",sheet_name=4,skiprows=(1))
+exp_report = pd.read_excel(dir_path + OTHER_ECXEL_FILE,sheet_name=4,skiprows=(1))
 
 #print('exp_report data', exp_report.head)
 

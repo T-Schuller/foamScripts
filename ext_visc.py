@@ -5,8 +5,8 @@ import numpy as np
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 
 #print(os.curdir)
-root = "/home/schuller/Desktop/Sharepoint_Simulation/material_studies/PET-CF_study/Giesekus/"
-path = root + "multimode_Giesekus_ext_PAA/"
+root = YOUR_FILEDIRECTORY
+path = root + MATERIAL_PATH
 
 
 # # source of7
@@ -45,7 +45,7 @@ rep_ext_YY=list(report.iloc[:, 4])
 
 ext_visc=np.array([(rep_ext_XX[x]-rep_ext_YY[x])/ext_rate for x in range(0,len(rep_ext_XX))])
 #print(ext_visc[0])
-exp_report = pd.read_excel("/home/schuller/Desktop/Sharepoint_Simulation/material_studies/PET-CF_study/Giesekus/mm_giesekuuus_report_new_petcf.ods",sheet_name=3,skiprows=(6))
+exp_report = pd.read_excel(YOUR_EXCEL_FILE,sheet_name=3,skiprows=(6))
 
 #print('exp_report data', exp_report.head)
 
