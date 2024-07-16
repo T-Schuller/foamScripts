@@ -3,3 +3,5 @@ ext_visc.py - Automates the plot generation of rheotestTool for extensional test
 shear_visc.py - Automates the plot generation of rheotestTool for shear tests.
 
 controlDict - Contains the recirculation size monitoring script.
+
+streamliner.py -  Python script developed to generate, with the input of streamline point coordinates, a polynomial fitting and closest circumference to the desired point interval and to create a new coordinate system with the normal and tangent curvature vectors, that allow for the transformation of the Cartesian tensions tensor to the new system.
